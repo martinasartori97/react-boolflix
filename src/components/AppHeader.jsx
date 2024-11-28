@@ -5,7 +5,7 @@ export default function AppHeader() {
         <header>
             <div>
                 <h1>boolflix</h1>
-                <button>cerca</button>
+
             </div>
         </header>
 
