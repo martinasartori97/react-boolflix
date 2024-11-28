@@ -10,8 +10,18 @@ function App() {
   return (
     <>
 
-      <AppHeader />
-      <AppMain />
+      <GlobalContext.Provider value={{ count, setCount }}>
+
+
+
+
+
+        <AppHeader />
+        <AppMain />
+
+
+      </GlobalContext.Provider>
+
     </>
   )
 }
