@@ -5,7 +5,6 @@ export default function AppHeader() {
         <header>
             <div>
                 <h1>boolflix</h1>
-                <input type="searchbar" />
                 <button>cerca</button>
             </div>
         </header>
