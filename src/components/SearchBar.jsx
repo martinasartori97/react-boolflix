@@ -1,6 +1,6 @@
 //components for searchbar
 export default function searchbar() {
     return (
-        <input type="searchbar" />
+        <input id="searchbar" type="searchbar" />
     )
 }
