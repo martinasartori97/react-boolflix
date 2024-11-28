@@ -1,11 +1,7 @@
 // structure for  global state 
-import { createContext, useState, useContext } from "react";
+import { createContext, useContext } from "react";
 const GlobalContext = createContext()
 export default GlobalContext
-
-
-const [movies, setMovies] = useState([])
-const [query, setQuery] = useState('')
 
 
 const searchMovies = (query) => {
