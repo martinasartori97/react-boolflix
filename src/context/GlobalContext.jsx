@@ -1,0 +1,1 @@
+// struttura global state 
