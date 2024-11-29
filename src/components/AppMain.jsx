@@ -1,6 +1,7 @@
 //components for appmain
 import ReactCountryFlag from 'react-country-flag';
 import { useGlobalContext } from "../context/GlobalContext"
+
 export default function AppMain() {
     const { movies } = useGlobalContext()
 
