@@ -2,7 +2,7 @@ import React, { createContext, useState, useContext } from "react";
 import './App.css'
 import AppHeader from './components/AppHeader'
 import AppMain from './components/AppMain'
-import GlobalContext from './context/GlobalContext'
+import { GlobalContextProvider, useGlobalContext } from './context/GlobalContext'
 import SearchBar from './components/SearchBar'
 import Button from './components/Button'
 
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
 
-      <GlobalContext.Provider value={{ count, setCount }}>
+      <GlobalContextProvider value={{ count, setCount }}>
 
 
 
@@ -24,7 +24,7 @@ function App() {
         <Button />
 
 
-      </GlobalContext.Provider>
+      </GlobalContextProvider>
 
     </>
   )
