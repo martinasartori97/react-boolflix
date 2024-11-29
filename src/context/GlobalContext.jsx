@@ -6,18 +6,10 @@ function GlobalContextProvider({ children }) {
 
     const [movies, setMovies] = useState([])
     const [searchText, setSearchText] = useState('')
+    console.log(searchText);
 
-    const base_api_url = 'https://api.themoviedb.org/3/search/movie?api_Key=${api_key}&query=${SearchText}'
-    const api_key = '5a543219867f24acc0f8f1177f20889d';
-
-    useEffect(() => {
-        fetch('https://api.themoviedb.org/3/search/movie?api_Key=${api_key}')
-            .then((res) => res.json())
-            .then(({ results }) => {
-                console.log(results);
-                setMovies(results);
-            });
-    }, [])
+    const api_key = '409853ba2db4ff2d805e6dab08e2958a';
+    const base_api_url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${searchText}`
 
     function HandleSearchTextSubmit(e) {
         e.preventDefault();
