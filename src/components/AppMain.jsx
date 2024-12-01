@@ -18,7 +18,7 @@ export default function AppMain() {
                 </div>
             ))}
 
-            <ReactCountryFlag />
+
 
 
 
