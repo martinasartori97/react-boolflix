@@ -2,20 +2,20 @@
 import ReactCountryFlag from 'react-country-flag';
 import { useGlobalContext } from "../context/GlobalContext"
 
-const languageToCountryCode = {
-    en: 'US',
-    it: 'IT',
-    fr: 'FR',
-    de: 'DE',
-    es: 'ES',
-
-};
 
 
 
 
 export default function AppMain() {
     const { movies } = useGlobalContext()
+
+
+    function movieCountryCode(movie) {
+        let countryCode = movie.original_language
+        return (<ReactCountryFlag countryCode={movie.original_language} />)
+
+    }
+
 
 
 
@@ -27,9 +27,13 @@ export default function AppMain() {
                     <p>titolo:{movie.title}</p>
                     <p>titolo originale:{movie.original_title}</p>
                     <p>language:{movie.original_language}</p>
-                    <ReactCountryFlag countryCode={movie.languageToCountryCode} />
                     <p>vote_average:{movie.vote_average}</p>
                 </div>
+
+
+
+
+
             ))}
 
 
