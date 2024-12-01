@@ -10,8 +10,7 @@ export default function AppMain() {
     const { movies } = useGlobalContext()
 
 
-    function movieCountryCode(movie) {
-        let countryCode = movie.original_language
+    function languageCountryCode(movie) {
         return (<ReactCountryFlag countryCode={movie.original_language} />)
 
     }
