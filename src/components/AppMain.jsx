@@ -11,7 +11,7 @@ export default function AppMain() {
 
 
     function languageCountryCode(movie) {
-        return (<ReactCountryFlag countryCode={movie.original_language} />)
+        return (<ReactCountryFlag countryCode={movie.original_language} svg />)
 
     }
 
