@@ -10,6 +10,7 @@ export default function AppMain() {
     const { movies } = useGlobalContext()
 
 
+
     function languageCountryCode(movie) {
         return (<ReactCountryFlag countryCode={movie.original_language} svg />)
 
@@ -18,9 +19,11 @@ export default function AppMain() {
 
 
 
+
     return (
 
         <main>
+
             {movies?.map((movie, index) => (
                 <div key={index}>
                     <p>titolo:{movie.title}</p>

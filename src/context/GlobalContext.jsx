@@ -8,6 +8,8 @@ function GlobalContextProvider({ children }) {
     const [searchText, setSearchText] = useState('')
     console.log(searchText);
 
+    // const api_key = import.meta.env.VITE_MOVIE_DB_API_KEY
+
     const api_key = '409853ba2db4ff2d805e6dab08e2958a';
     const base_api_url = `https://api.themoviedb.org/3/search/movie?api_key=${api_key}&query=${searchText}`
 
