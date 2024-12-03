@@ -1,10 +1,10 @@
 import React, { createContext, useState, useContext } from "react";
 import './App.css'
 import AppHeader from './components/AppHeader'
-import AppMain from './components/AppMain'
-import { GlobalContextProvider, useGlobalContext } from './context/GlobalContext'
 import SearchBar from './components/SearchBar'
 import Button from './components/Button'
+import AppMain from './components/AppMain'
+import { GlobalContextProvider, useGlobalContext } from './context/GlobalContext'
 
 function App() {
 
@@ -19,9 +19,9 @@ function App() {
 
 
         <AppHeader />
-        <AppMain />
         <SearchBar />
         <Button />
+        <AppMain />
 
 
 
