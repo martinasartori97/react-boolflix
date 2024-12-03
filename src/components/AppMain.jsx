@@ -1,8 +1,8 @@
 //components for appmain
 import ReactCountryFlag from 'react-country-flag';
 import { useGlobalContext } from "../context/GlobalContext"
-// import searchbar from './SearchBar';
-// import button from './Button';
+import searchbar from './SearchBar';
+import button from './Button';
 
 
 
@@ -25,8 +25,7 @@ export default function AppMain() {
     return (
 
         <main>
-            {/* <searchbar />
-            <button /> */}
+
 
             {movies?.map((movie, index) => (
                 <div key={index}>

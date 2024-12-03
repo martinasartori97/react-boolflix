@@ -51,8 +51,3 @@ function useGlobalContext() {
 
 
 export { GlobalContextProvider, useGlobalContext }
-
-
-
-
-
